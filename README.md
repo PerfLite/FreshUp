@@ -6,7 +6,14 @@
 
 **Приложение для отслеживания сроков годности продуктов**
 
-Kotlin · Jetpack Compose · Material 3 · Room
+![Kotlin](https://img.shields.io/badge/kotlin-2.0%2B-7F52FF?logo=kotlin&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/jetpack%20compose-BOM%202024.12-4285F4?logo=jetpackcompose&logoColor=white)
+![Material 3](https://img.shields.io/badge/material%203-design-7570B6?logo=materialdesign&logoColor=white)
+![Room](https://img.shields.io/badge/room-2.6.1-6DB33F?logo=sqlite&logoColor=white)
+
+![Version](https://img.shields.io/badge/version-1.0-brightgreen)
+![Platform](https://img.shields.io/badge/platform-Android%208.0%2B-3DDC84?logo=android&logoColor=white)
+![License](https://img.shields.io/badge/license-GPL--3.0-007ec6)
 
 </div>
 
