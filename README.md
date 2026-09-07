@@ -43,7 +43,7 @@ FreshUp помогает не забывать о продуктах в холо
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/<ваш-логин>/FreshUp.git
+git clone https://github.com/PerfLite/FreshUp.git
 cd FreshUp
 
 # Собрать debug-APK (появится в apk/app-debug.apk)
