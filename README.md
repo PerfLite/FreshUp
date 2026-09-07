@@ -72,17 +72,6 @@ app/src/main/java/com/example/freshup/
 └── ui/theme/        #   Тема Material 3
 ```
 
-## 📲 Установка на телефон
-
-В корне лежит скрипт `install_on_phone/serve_apk.py` — он поднимает локальный HTTP-сервер с собранным APK и показывает QR-код для скачивания на телефон (нужен Python с пакетами `pillow` и `qrcode`).
-
-```bash
-pip install pillow qrcode
-python install_on_phone/serve_apk.py
-```
-
-Отсканируйте QR-код камерой телефона и установите APK.
-
 ## 📄 Лицензия
 
 Проект распространяется по лицензии [GNU GPL-3.0](LICENSE).
