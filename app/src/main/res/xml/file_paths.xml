@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- filesDir/product_photos: куда ProductPhotoManager кладёт фото и capture-файлы для камеры. -->
+    <files-path
+        name="product_photos"
+        path="product_photos/" />
+</paths>

@@ -1,0 +1,34 @@
+# Built application files
+*.apk
+*.aab
+*.aar
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java / Kotlin / Gradle
+*.class
+*.log
+.gradle/
+.kotlin/
+build/
+/app/build/
+/local.properties
+captures/
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.DS_Store
+.externalNativeBuild/
+.cxx/
+
+# Утилиты локальной установки APK на телефон — не для репозитория
+Install_On_Phone.exe
+install_on_phone/
+
+# Release-подпись: keystore и пароли никогда не коммитим
+*.jks
+*.keystore
+keystore/
+keystore.properties
