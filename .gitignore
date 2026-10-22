@@ -32,3 +32,10 @@ install_on_phone/
 *.keystore
 keystore/
 keystore.properties
+
+# Скрипты локального деплоя и конфигурации агентов
+deploy.ps1
+deploy*.ps1
+AGENTS.MD
+AGENTS.md
+

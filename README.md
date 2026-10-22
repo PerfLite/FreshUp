@@ -1,84 +1,62 @@
 <div align="center">
 
-<img src="freshup_icon.png" alt="FreshUp" width="120"/>
+<img src="assets/banner.svg" alt="FreshUp" width="100%">
 
-# FreshUp
+<p>
+  <img src="https://img.shields.io/github/v/release/PerfLite/FreshUp?style=flat-square" alt="release">
+  <img src="https://img.shields.io/github/license/PerfLite/FreshUp?style=flat-square" alt="license">
+  <img src="https://img.shields.io/github/languages/top/PerfLite/FreshUp?style=flat-square" alt="language">
+  <img src="https://img.shields.io/github/stars/PerfLite/FreshUp?style=flat-square" alt="stars">
+  <img src="https://img.shields.io/github/downloads/PerfLite/FreshUp/total?style=flat-square" alt="downloads">
+</p>
 
-**Приложение для отслеживания сроков годности продуктов**
-
-![Kotlin](https://img.shields.io/badge/kotlin-2.0%2B-7F52FF?logo=kotlin&logoColor=white)
-![Jetpack Compose](https://img.shields.io/badge/jetpack%20compose-BOM%202024.12-4285F4?logo=jetpackcompose&logoColor=white)
-![Material 3](https://img.shields.io/badge/material%203-design-7570B6?logo=materialdesign&logoColor=white)
-![Room](https://img.shields.io/badge/room-2.6.1-6DB33F?logo=sqlite&logoColor=white)
-
-![Version](https://img.shields.io/badge/version-1.0-brightgreen)
-![Platform](https://img.shields.io/badge/platform-Android%208.0%2B-3DDC84?logo=android&logoColor=white)
-![License](https://img.shields.io/badge/license-GPL--3.0-007ec6)
+<p>
+  <a href="https://github.com/PerfLite/FreshUp/releases/latest"><b>⬇️ Скачать</b></a> ·
+  <a href="https://github.com/PerfLite/FreshUp/releases">📦 Все релизы</a>
+</p>
 
 </div>
 
+## ⬇️ Скачать
+
+| Файл | Описание | Ссылка |
+|---|---|---|
+| `app-release.apk` | Основная сборка для Android (8.0+) | [Скачать](https://github.com/PerfLite/FreshUp/releases/latest/download/app-release.apk) |
+
+> Старые версии и список изменений: [Релизы](https://github.com/PerfLite/FreshUp/releases)
+
 ---
 
-## 📖 О проекте
+## Возможности
 
-FreshUp помогает не забывать о продуктах в холодильнике, морозилке или шкафу и вовремя их использовать, пока срок годности не истёк. Добавляйте продукты вручную или сканируйте штрихкод — приложение покажет, сколько дней осталось, отсортирует по свежести и напомнит уведомлением заранее.
+- 📷 **Сканер штрихкодов** — мгновенное распознавание штрихкодов через камеру с помощью Google ML Kit и автозаполнением названий из базы Open Food Facts.
+- 🔦 **Поддержка фонарика** — удобное включение подсветки камеры для сканирования штрихкодов в темноте или в холодильнике.
+- 🧊 **Зоны хранения** — разделение продуктов по местам хранения: «Холодильник», «Морозилка», «Шкаф».
+- ⚡ **Быстрые пресеты срока** — выбор срока годности в одно касание (`+1 дн`, `+3 дн`, `+1 нед`, `+2 нед`, `+1 мес`, `+6 мес`).
+- 📊 **Интерактивный дашборд** — компактные плитки со счётчиками срочности («Срочно», «Скоро», «В норме»), работающие как фильтры.
+- 🔍 **Мгновенный поиск** — поиск и фильтрация продуктов по названию в реальном времени.
+- ♻️ **Трекер Zero Waste** — кнопки «Съедено» и «Выброшено» на карточках, круговая статистика и советы по снижению пищевых отходов.
+- 🔔 **Умные уведомления** — своевременные push-напоминания о продуктах до истечения их срока годности (AlarmManager + WorkManager).
+- 🌙 **Тёмная тема** — глубокий комфортный тёмный интерфейс Material 3.
 
-## ✨ Возможности
+## Установка
 
-- **Учёт продуктов** — название, категория, фото, место хранения (холодильник / морозилка / шкаф)
-- **Сканер штрихкодов** — сканирование через камеру на базе ML Kit Barcode Scanning + CameraX
-- **Напоминания** — push-уведомления за настраиваемое число дней до конца срока (AlarmManager + WorkManager, повтор после перезагрузки устройства)
-- **Статусы продуктов** — активный, просрочен, израсходован; архив с историей
-- **Сводка и статистика** — дашборд и статистика по категориям и местам хранения
-- **10 предустановленных категорий** — молочные продукты, мясо, рыба, овощи, фрукты и др.
+1. Скачайте файл `app-release.apk` из раздела [Релизы](https://github.com/PerfLite/FreshUp/releases/latest).
+2. При необходимости разрешите установку приложений из неизвестных источников в настройках устройства.
+3. Установите и запустите приложение.
 
-## 🛠 Технологии
-
-| Слой | Решение |
-|---|---|
-| Язык | Kotlin, Coroutines + Flow |
-| UI | Jetpack Compose (BOM 2024.12.01), Material 3, MVVM |
-| Данные | Room, DataStore Preferences |
-| Камера / штрихкоды | CameraX, ML Kit Barcode Scanning |
-| Изображения | Coil |
-| Уведомления | WorkManager, AlarmManager |
-| Сборка | Gradle Kotlin DSL, KSP, AGP 8.7.3 |
-
-## 🚀 Сборка и запуск
-
-**Требования:** Android Studio, JDK 17, Android SDK 35.
+## Сборка
 
 ```bash
-# Клонировать репозиторий
 git clone https://github.com/PerfLite/FreshUp.git
 cd FreshUp
-
-# Собрать debug-APK (появится в apk/app-debug.apk)
-./gradlew assembleDebug
+./gradlew assembleRelease
 ```
 
-Или откройте проект в Android Studio: **File → Open** → выберите папку проекта → **Run** ▶.
+Собранный APK будет находиться в папке `apk/app-release.apk` (или `app/build/outputs/apk/release/app-release.apk`).
 
-- Минимальная версия Android: **8.0 (API 26)**
-- Целевая версия: **Android 15 (API 35)**
+## Лицензия
 
-## 📁 Структура проекта
+GPL-3.0 — см. [LICENSE](LICENSE).
 
-```
-app/src/main/java/com/example/freshup/
-├── data/            # Room, репозитории, DataStore, фото, штрихкоды
-│   ├── database/    #   ProductEntity, ProductDao, AppDatabase
-│   └── repository/  #   ProductRepositoryImpl
-├── domain/
-│   ├── model/       #   Product, Category, StorageLocation, ProductStatus
-│   └── repository/ #   ProductRepository (интерфейс)
-├── notification/    # Уведомления, планировщики, BootReceiver
-├── presentation/
-│   ├── main/        #   Список продуктов, ViewModel, компоненты
-│   └── settings/    #   Экран настроек
-└── ui/theme/        #   Тема Material 3
-```
-
-## 📄 Лицензия
-
-Проект распространяется по лицензии [GNU GPL-3.0](LICENSE).
+<p align="right"><a href="#">↑ Наверх</a></p>
